@@ -1,0 +1,130 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/storeStylest.css">
+    <script src="js/functions.js" defer></script>
+    <title>Tienda Dragonball</title> 
+  </head>
+  <body>
+    <header class="header">
+      <span class="header__icon" id="menuOpenIcon" role="button" aria-label="Abrir menu">
+        <img src="img/menu_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono de menú " class="header__image">
+      </span>
+      <section id="navSection" class="header__nav-container hidden" aria-hidden="true" aria-label="Menú navegación">
+        <nav class="header__nav">
+          <a class="header__link" href="../index.html">Home</a>
+          <a class="header__link" href="#">Productos</a>
+          <div class="header__icon" id="menuCloseIcon" role="button" aria-label="Cerrar menú"> 
+            <img class="header__image1" src="img/close_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="Icono cerrar">
+          </div>
+        </nav>
+      </section>
+      <img src="img/dragon_ball-removebg-preview.png" alt="Logo de dragon Ball" class="header__logo">
+      <span class="header__icon" id="cartOpenIcon" role="button" aria-label="Abrir carrito">
+        <img src="img/shopping-bag.svg" alt="Icono de carrito " class="header__image">
+        <span id="cartBadge" class="cart__badge">0</span>  
+      </span>
+      
+      <article class="cart hidden" aria-labelledby="cart-title" aria-live="polite">
+        <section  class="cart__header">
+        <h2 class="cart__title" id="cart-title">CARRITO</h2>
+        <div class="header__icon" id="cartCloseIcon" role="button" aria-label="Cerrar menú"> 
+          <img class="header__image2" src="img/x.svg" alt="Icono cerrar">
+        </div>
+        </section>
+        <div class="cart__items" aria-label="Artículos en el carrito"> </div>
+        <p class="cart__total">Total: $<span id="cartTotal" aria-live="polite">0.00</span></p>
+        <p class="cart__item-count">Artículos en el carrito: <span id="cartCount">0</span></p>
+        <button class="btn-buy" aria-label="Comprar los articulos del carrito">COMPRAR</button>
+      </article>
+    </header>
+    
+    
+    <main>
+      <article class="products" aria-label="Catálogo de productos">
+        <section class="products__item" aria-labelledby="vegeta-title vegeta-price">
+          <img class="products__img" src="img/d8.png" alt="Figura de Vegeta">
+          <h2 class="products__title" id="vegeta-title">Vegeta</h2>
+          <p class="products_price" id="vegeta-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item" aria-labelledby="broly-title broly-price">
+          <img class="products__img" src="img/d2.png" alt="Broly Sayayin">
+          <h2 class="products__title" id="broly-title">Broly Sayayin</h2>
+          <p class="products_price" id="broly-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item" aria-labelledby="bardock-title bardock-price">
+          <img class="products__img" src="img/d3.png" alt="Bardock">
+          <h2 class="products__title" id="bardock-title">Bardock</h2>
+          <p class="products_price" id="bardock-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item">
+          <img class="products__img" src="img/d4.png" alt="Piccolo" aria-labelledby="piccolo-title piccolo-price">
+          <h2 class="products__title" id="piccolo-title">Piccolo</h2>
+          <p class="products_price" id="piccolo-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item">
+          <img class="products__img" src="img/d5.png" alt="Jiren vs Goku" aria-labelledby="jiren-title jiren-price">
+          <h2 class="products__title" id="jiren-title">Jiren vs Goku</h2>
+          <p class="products_price" id="jiren-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item">
+          <img class="products__img" src="img/d6.png" alt="Goku fase tres" aria-labelledby="goku-title goku-price">
+          <h2 class="products__title" id="goku-title">Goku III</h2>
+          <p class="products_price" id="goku-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item">
+          <img class="products__img" src="img/d7.png" alt="Maestro Roshi" aria-labelledby="roshi-title roshi-price">
+          <h2 class="products__title" id="roshi-title">Maestro Roshi</h2>
+          <p class="products_price" id="roshi-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item">
+          <img class="products__img" src="img/d9.png" alt="Broly" aria-labelledby="broly2-price broly2-title">
+          <h2 class="products__title" id="broly2-title">Broly</h2>
+          <p class="products_price" id="broly2-price">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        <section class="products__item">
+          <img class="products__img" src="img/d1.png" alt="Vegeta y Nappa" aria-labelledby="nappa-price nappa-title">
+          <h2 class="products__title" id="nappa-title">Vegeta y Nappa</h2>
+          <p class="products_price" id="nappa-title">$1,799.00</p>
+          <button class="btn-buy" aria-label="Agregar al carrito">Agregar al carrito</button>
+        </section>
+        
+      </article>
+    </main>
+    <footer class="footer" role="contentinfo" aria-label="Información de sitio">
+      <div class="footer__logo">
+          <img class="footer__logo-image" src="img/dragon_ball-removebg-preview.png" alt="Dragon Ball Logo" width="100px" aria-hidden="true">
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces principales">
+          <a class="footer__link" href="../index.html">Home</a>
+          <a class="footer__link" href="#">Productos</a>
+      </nav>
+      <nav class="footer__nav" aria-label="Redes sociales">
+          <a class="footer__link" href="https://www.youtube.com/watch?v=f4vwlNx0Rw8">Youtube</a>
+      </nav>
+  </footer>
+  </body>
+</html>
